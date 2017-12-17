@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(dryRun = false, monochrome=true, features= "src/test/java/resources",
-				glue="stepdefinition", format= {"pretty" , "html:daisy", "jason:daisy/cucumberReport.json"}, tags= {"@tag4","~@tag2, ~@tag1"}) 
+				glue="stepdefinition", format= {"pretty" , "html:daisy", "json:daisy/cucumberReport.json"}, tags= {"@tag4","~@tag2, ~@tag1"}) 
 public class Runner {
 
 	public static void main(String[] args) {
